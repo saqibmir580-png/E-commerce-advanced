@@ -23,6 +23,7 @@ import Addproduct from "./pages/Addproduct";
 import Couponlist from "./pages/Couponlist";
 import AddCoupon from "./pages/AddCoupon";
 import ViewOrder from "./pages/ViewOrder";
+import ViewEnq from "./pages/ViewEnq";
 const App = () => {
   return (
     <Router>
@@ -34,7 +35,7 @@ const App = () => {
         <Route index element={<Dashboard/>}/>
         <Route path="customers" element={<Customers/>}/>
         <Route path="enquiries" element={<Enquiries/>}/>
-        <Route path="enquiries/:id" element={<Enquiries/>}/>
+        <Route path="enquiries/:id" element={<ViewEnq/>}/>
         <Route path="blog-list" element={<Bloglist/>}/>
         <Route path="blog" element={<Addblog/>}/>
         <Route path="blog/:id" element={<Addblog/>}/>
